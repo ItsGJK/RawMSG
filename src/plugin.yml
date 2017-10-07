@@ -1,0 +1,8 @@
+name: RawMSG
+description: Broadcast raw messages into chat!
+version: 4-SNAPSHOT
+author: ItsGJK
+main: itsgjk.rawmsg.RawMSG
+commands:
+  rawmsg:
+    description: Displays information on RawMSG and help.
