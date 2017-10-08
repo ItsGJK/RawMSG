@@ -13,7 +13,7 @@ public class Logger {
 
     //Debug
     public static void d(String d){
-        Bukkit.getLogger().info(d);
+        Bukkit.getLogger().info("[DEBUG] " + d);
     }
 
     //Standard console message

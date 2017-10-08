@@ -7,12 +7,18 @@
 
 package itsgjk.rawmsg;
 
+import itsgjk.rawmsg.config.ConfigManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RawMSG extends JavaPlugin {
 
+    public ConfigManager cm;
+
     @Override
     public void onEnable(){
+        //Initialization
+        cm = new ConfigManager(this);
+
 
     }
 

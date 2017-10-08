@@ -14,18 +14,28 @@ public class ConfigManager {
 
     RawMSG m;
 
+    public String prefix;
+    public String syntax;
+    public String error;
+
+
     public ConfigManager(RawMSG m){
         this.m=m;
 
         m.getConfig().options().copyDefaults(true);
         s();
 
-        Logger.d("Loaded configmanager");
+        initiateConfig();
+        Logger.d("Loaded ConfigManager");
 
     }
 
     public void s(){
         m.saveConfig();
+    }
+
+    public void initiateConfig(){
+
     }
 
 
